@@ -11,9 +11,9 @@ config_version=5
 [application]
 
 config/name="RedTain"
-config/description="s"
+config/description="An Open Source & Public Domain game made to givve players a new experience of a never ending world.s"
 config/features=PackedStringArray("4.7", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="uid://ba8psbo20bi8g"
 
 [autoload]
 
