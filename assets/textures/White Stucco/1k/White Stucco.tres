@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://d1f717c47y1di"]
+
+[ext_resource type="Texture2D" uid="uid://d01tf5ao6qkvr" path="res://assets/textures/White Stucco/1k/textures/white_stucco_diff_1k.png" id="1_u3vwr"]
+[ext_resource type="Texture2D" uid="uid://cof02p0470q2x" path="res://assets/textures/White Stucco/1k/textures/white_stucco_ao_1k.png" id="2_6lhgu"]
+[ext_resource type="Texture2D" uid="uid://gwfbair7qnay" path="res://assets/textures/White Stucco/1k/textures/white_stucco_disp_1k.png" id="3_eubqt"]
+[ext_resource type="Texture2D" uid="uid://c8625qqoflu2d" path="res://assets/textures/White Stucco/1k/textures/white_stucco_nor_gl_1k.png" id="4_1ijwy"]
+[ext_resource type="Texture2D" uid="uid://bv0cwl5fsudx0" path="res://assets/textures/White Stucco/1k/textures/white_stucco_rough_1k.png" id="5_k5i0f"]
+
+[resource]
+albedo_texture = ExtResource("1_u3vwr")
+roughness_texture = ExtResource("5_k5i0f")
+normal_enabled = true
+normal_texture = ExtResource("4_1ijwy")
+ao_enabled = true
+ao_texture = ExtResource("2_6lhgu")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_eubqt")
+heightmap_flip_texture = true
+uv1_triplanar = true

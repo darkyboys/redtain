@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://txludl2qhu47"]
+
+[ext_resource type="Texture2D" uid="uid://wwwgf7um6wb3" path="res://assets/textures/Black Painted Planks/1k/textures/black_painted_planks_diff_1k.png" id="1_3gud5"]
+[ext_resource type="Texture2D" uid="uid://o0pytcscj53i" path="res://assets/textures/Black Painted Planks/1k/textures/black_painted_planks_ao_1k.png" id="2_7tltr"]
+[ext_resource type="Texture2D" uid="uid://bgwwgrt8h525k" path="res://assets/textures/Black Painted Planks/1k/textures/black_painted_planks_disp_1k.png" id="3_4cl3s"]
+[ext_resource type="Texture2D" uid="uid://cce6fhf1nl7vd" path="res://assets/textures/Black Painted Planks/1k/textures/black_painted_planks_nor_gl_1k.png" id="4_5ecu6"]
+[ext_resource type="Texture2D" uid="uid://bnnfn3rhdudug" path="res://assets/textures/Black Painted Planks/1k/textures/black_painted_planks_rough_1k.png" id="5_lfwiy"]
+
+[resource]
+albedo_texture = ExtResource("1_3gud5")
+roughness_texture = ExtResource("5_lfwiy")
+normal_enabled = true
+normal_texture = ExtResource("4_5ecu6")
+ao_enabled = true
+ao_texture = ExtResource("2_7tltr")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_4cl3s")
+heightmap_flip_texture = true
+uv1_triplanar = true

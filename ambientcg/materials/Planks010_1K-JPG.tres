@@ -1,0 +1,22 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bgsovuvvea7wv"]
+
+[ext_resource type="Texture2D" uid="uid://52dbveh28wpb" path="res://ambientcg/extracted/Planks010_1K-JPG/Planks010_1K-JPG_Color.jpg" id="1_6awex"]
+[ext_resource type="Texture2D" uid="uid://tafur621uro8" path="res://ambientcg/extracted/Planks010_1K-JPG/Planks010_1K-JPG_AmbientOcclusion.jpg" id="2_v75xf"]
+[ext_resource type="Texture2D" uid="uid://ctr6xrnihus4e" path="res://ambientcg/extracted/Planks010_1K-JPG/Planks010_1K-JPG_Displacement.jpg" id="3_llv83"]
+[ext_resource type="Texture2D" uid="uid://cf53yusb7gu24" path="res://ambientcg/extracted/Planks010_1K-JPG/Planks010_1K-JPG_NormalGL.jpg" id="4_fdkc8"]
+[ext_resource type="Texture2D" uid="uid://dq8s8cl0uwslu" path="res://ambientcg/extracted/Planks010_1K-JPG/Planks010_1K-JPG_Roughness.jpg" id="5_lr1ml"]
+
+[resource]
+albedo_texture = ExtResource("1_6awex")
+roughness_texture = ExtResource("5_lr1ml")
+roughness_texture_channel = 4
+normal_enabled = true
+normal_texture = ExtResource("4_fdkc8")
+ao_enabled = true
+ao_texture = ExtResource("2_v75xf")
+ao_texture_channel = 4
+heightmap_enabled = true
+heightmap_scale = 1.0
+heightmap_texture = ExtResource("3_llv83")
+uv1_scale = Vector3(0.2, 0.2, 0.2)
+uv1_triplanar = true

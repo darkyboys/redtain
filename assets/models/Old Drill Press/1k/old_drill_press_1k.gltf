@@ -1,0 +1,236 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v5.1.20",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0,
+        1
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "old_drill_press_cable"
+    },
+    {
+      "mesh": 1,
+      "name": "old_drill_press"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "old_drill_press",
+      "normalTexture": {
+        "index": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Drill_Press.011",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "Drill_Press.021",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/jpeg",
+      "name": "old_drill_press_nor_gl",
+      "uri": "textures/old_drill_press_nor_gl_1k.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "name": "old_drill_press_diff",
+      "uri": "textures/old_drill_press_diff_1k.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "name": "old_drill_press_metal-old_drill_press_rough",
+      "uri": "textures/old_drill_press_arm_1k.jpg"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 2401,
+      "max": [
+        -0.06920477747917175,
+        0.8224506378173828,
+        0.03318891301751137
+      ],
+      "min": [
+        -0.3589768409729004,
+        0,
+        -0.42750006914138794
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 2401,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 2401,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 10974,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 16018,
+      "max": [
+        0.1682186722755432,
+        1.0499999523162842,
+        0.18201754987239838
+      ],
+      "min": [
+        -0.10618433356285095,
+        0.0000016638819033687469,
+        -0.330000102519989
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 16018,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 16018,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5123,
+      "count": 54552,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 28812,
+      "byteOffset": 0,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 28812,
+      "byteOffset": 28812,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 19208,
+      "byteOffset": 57624,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 21948,
+      "byteOffset": 76832,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 192216,
+      "byteOffset": 98780,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 192216,
+      "byteOffset": 290996,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 128144,
+      "byteOffset": 483212,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 109104,
+      "byteOffset": 611356,
+      "target": 34963
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 720460,
+      "uri": "old_drill_press.bin"
+    }
+  ]
+}

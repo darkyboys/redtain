@@ -1,0 +1,22 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://jk68nnrioc8a"]
+
+[ext_resource type="Texture2D" uid="uid://boasx0553o0hr" path="res://ambientcg/extracted/Grass005_1K-JPG/Grass005_1K-JPG_Color.jpg" id="1_w5xi1"]
+[ext_resource type="Texture2D" uid="uid://bmxh63unyxxpe" path="res://ambientcg/extracted/Grass005_1K-JPG/Grass005_1K-JPG_AmbientOcclusion.jpg" id="2_avl5q"]
+[ext_resource type="Texture2D" uid="uid://htcqyf33ij0s" path="res://ambientcg/extracted/Grass005_1K-JPG/Grass005_1K-JPG_Displacement.jpg" id="3_hxlb6"]
+[ext_resource type="Texture2D" uid="uid://c8sw8vfwvibqm" path="res://ambientcg/extracted/Grass005_1K-JPG/Grass005_1K-JPG_NormalGL.jpg" id="4_6pjhv"]
+[ext_resource type="Texture2D" uid="uid://b1c1j0bcwal8e" path="res://ambientcg/extracted/Grass005_1K-JPG/Grass005_1K-JPG_Roughness.jpg" id="5_w2qvf"]
+
+[resource]
+albedo_texture = ExtResource("1_w5xi1")
+roughness_texture = ExtResource("5_w2qvf")
+roughness_texture_channel = 4
+normal_enabled = true
+normal_texture = ExtResource("4_6pjhv")
+ao_enabled = true
+ao_texture = ExtResource("2_avl5q")
+ao_texture_channel = 4
+heightmap_enabled = true
+heightmap_scale = 1.0
+heightmap_texture = ExtResource("3_hxlb6")
+uv1_scale = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true

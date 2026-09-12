@@ -1,0 +1,21 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cqewdvlel3ag"]
+
+[ext_resource type="Texture2D" uid="uid://cpir3r1uyi5qc" path="res://assets/textures/Rusty Painted Metal/1k/textures/rusty_painted_metal_diff_1k.png" id="1_bugyt"]
+[ext_resource type="Texture2D" uid="uid://c58fbtociiolj" path="res://assets/textures/Rusty Painted Metal/1k/textures/rusty_painted_metal_ao_1k.png" id="2_6ber2"]
+[ext_resource type="Texture2D" uid="uid://paobplkrb3w6" path="res://assets/textures/Rusty Painted Metal/1k/textures/rusty_painted_metal_disp_1k.png" id="3_kc7y0"]
+[ext_resource type="Texture2D" uid="uid://dhofdm8n418my" path="res://assets/textures/Rusty Painted Metal/1k/textures/rusty_painted_metal_nor_gl_1k.png" id="4_ge250"]
+[ext_resource type="Texture2D" uid="uid://be2js4j5osfpx" path="res://assets/textures/Rusty Painted Metal/1k/textures/rusty_painted_metal_rough_1k.png" id="5_n085f"]
+
+[resource]
+albedo_texture = ExtResource("1_bugyt")
+metallic = 0.5
+metallic_texture = ExtResource("1_bugyt")
+roughness_texture = ExtResource("5_n085f")
+normal_enabled = true
+normal_texture = ExtResource("4_ge250")
+ao_enabled = true
+ao_texture = ExtResource("2_6ber2")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_kc7y0")
+heightmap_flip_texture = true
+uv1_triplanar = true

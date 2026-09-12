@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cnj58ewdnu17l"]
+
+[ext_resource type="Texture2D" uid="uid://h0vwtrtvdaol" path="res://assets/textures/Brick Floor 04/1k/textures/brick_floor_04_diff_1k.png" id="1_oft4u"]
+[ext_resource type="Texture2D" uid="uid://btced287ajayd" path="res://assets/textures/Brick Floor 04/1k/textures/brick_floor_04_ao_1k.png" id="2_xktcu"]
+[ext_resource type="Texture2D" uid="uid://b4iv8tcbo8hw8" path="res://assets/textures/Brick Floor 04/1k/textures/brick_floor_04_disp_1k.png" id="3_43vv7"]
+[ext_resource type="Texture2D" uid="uid://cc62tuy2qlqp0" path="res://assets/textures/Brick Floor 04/1k/textures/brick_floor_04_nor_gl_1k.png" id="4_skdky"]
+[ext_resource type="Texture2D" uid="uid://cngunycq5swo2" path="res://assets/textures/Brick Floor 04/1k/textures/brick_floor_04_rough_1k.png" id="5_duteq"]
+
+[resource]
+albedo_texture = ExtResource("1_oft4u")
+roughness_texture = ExtResource("5_duteq")
+normal_enabled = true
+normal_texture = ExtResource("4_skdky")
+ao_enabled = true
+ao_texture = ExtResource("2_xktcu")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_43vv7")
+heightmap_flip_texture = true
+uv1_triplanar = true

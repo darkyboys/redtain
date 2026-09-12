@@ -1,0 +1,22 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://jso1s8o4fgfe"]
+
+[ext_resource type="Texture2D" uid="uid://dne1vjm34jh12" path="res://ambientcg/extracted/RoofingTiles013A_1K-JPG/RoofingTiles013A_1K-JPG_Color.jpg" id="1_aig2e"]
+[ext_resource type="Texture2D" uid="uid://d2m5jbtll5gci" path="res://ambientcg/extracted/RoofingTiles013A_1K-JPG/RoofingTiles013A_1K-JPG_AmbientOcclusion.jpg" id="2_k4uwf"]
+[ext_resource type="Texture2D" uid="uid://dq05vsmm0d1ub" path="res://ambientcg/extracted/RoofingTiles013A_1K-JPG/RoofingTiles013A_1K-JPG_Displacement.jpg" id="3_3ggp8"]
+[ext_resource type="Texture2D" uid="uid://85wv18rvkkp0" path="res://ambientcg/extracted/RoofingTiles013A_1K-JPG/RoofingTiles013A_1K-JPG_NormalGL.jpg" id="4_xtg8y"]
+[ext_resource type="Texture2D" uid="uid://bhi00ednwwyi" path="res://ambientcg/extracted/RoofingTiles013A_1K-JPG/RoofingTiles013A_1K-JPG_Roughness.jpg" id="5_7oqyi"]
+
+[resource]
+albedo_texture = ExtResource("1_aig2e")
+roughness_texture = ExtResource("5_7oqyi")
+roughness_texture_channel = 4
+normal_enabled = true
+normal_texture = ExtResource("4_xtg8y")
+ao_enabled = true
+ao_texture = ExtResource("2_k4uwf")
+ao_texture_channel = 4
+heightmap_enabled = true
+heightmap_scale = 1.0
+heightmap_texture = ExtResource("3_3ggp8")
+uv1_scale = Vector3(0.4, 0.4, 0.4)
+uv1_triplanar = true

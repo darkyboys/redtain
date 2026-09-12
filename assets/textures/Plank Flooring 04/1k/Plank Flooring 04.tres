@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://d2kr0mcewbm5d"]
+
+[ext_resource type="Texture2D" uid="uid://cxo8wq1o241m6" path="res://assets/textures/Plank Flooring 04/1k/textures/plank_flooring_04_diff_1k.png" id="1_bi617"]
+[ext_resource type="Texture2D" uid="uid://btmuwvo1rnylf" path="res://assets/textures/Plank Flooring 04/1k/textures/plank_flooring_04_ao_1k.png" id="2_r404c"]
+[ext_resource type="Texture2D" uid="uid://3q25ukkcf6k3" path="res://assets/textures/Plank Flooring 04/1k/textures/plank_flooring_04_disp_1k.png" id="3_4gk37"]
+[ext_resource type="Texture2D" uid="uid://pprje3cm3siy" path="res://assets/textures/Plank Flooring 04/1k/textures/plank_flooring_04_nor_gl_1k.png" id="4_kn5wx"]
+[ext_resource type="Texture2D" uid="uid://dwr775jca3fmh" path="res://assets/textures/Plank Flooring 04/1k/textures/plank_flooring_04_rough_1k.png" id="5_71wt4"]
+
+[resource]
+albedo_texture = ExtResource("1_bi617")
+roughness_texture = ExtResource("5_71wt4")
+normal_enabled = true
+normal_texture = ExtResource("4_kn5wx")
+ao_enabled = true
+ao_texture = ExtResource("2_r404c")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_4gk37")
+heightmap_flip_texture = true
+uv1_triplanar = true
