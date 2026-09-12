@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://cbwngbq74gnjq"]
+
+[ext_resource type="Script" uid="uid://ci6dbh5qhvmj5" path="res://addons/ambientcg/ui/main/ambient_ui.gd" id="1_tpory"]
+[ext_resource type="PackedScene" uid="uid://la5yvpkm26t5" path="res://addons/ambientcg/ui/browser/browser.tscn" id="2_browser"]
+[ext_resource type="PackedScene" path="res://addons/ambientcg/ui/settings/settings.tscn" id="3_settings"]
+
+[node name="AmbientUI" type="Control"]
+custom_minimum_size = Vector2(300, 300)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_tpory")
+
+[node name="TabContainer" type="TabContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+current_tab = 0
+
+[node name="Browser" parent="TabContainer" instance=ExtResource("2_browser")]
+unique_name_in_owner = true
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="Settings" parent="TabContainer" instance=ExtResource("3_settings")]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1

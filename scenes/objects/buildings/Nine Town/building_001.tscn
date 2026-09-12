@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://bf20irf61rodx"]
+
+[node name="Building 001" type="Node3D" unique_id=70707919]
+
+[node name="Base" type="CSGCombiner3D" parent="." unique_id=809566221]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="Building Base Structure" type="CSGBox3D" parent="Base" unique_id=189431744]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.5, 0)
+size = Vector3(15, 10, 15)
+
+[node name="Base Emptier" type="CSGBox3D" parent="Base" unique_id=1769492061]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.291172, 4.3094177, 4.0655594)
+operation = 2
+size = Vector3(5.4676514, 13.670471, 9.71582)
+
+[node name="Base Emptier2" type="CSGBox3D" parent="Base" unique_id=1821429321]
+transform = Transform3D(0.49999994, 0.8660253, 0, -0.8660253, 0.49999994, 0, 0, 0, 1, -8.261314, 11.198843, -2.2150097)
+operation = 2
+size = Vector3(9.470551, 13.670471, 22.523438)
+
+[node name="Base Emptier3" type="CSGBox3D" parent="Base" unique_id=897848112]
+transform = Transform3D(-0.50000006, 0.86602527, 0, -0.86602527, -0.50000006, 0, 0, 0, 1, 4.70027, 11.198843, -2.2150097)
+operation = 2
+size = Vector3(9.470551, 13.670471, 22.523438)
+
+[node name="Base Roof" type="CSGCombiner3D" parent="." unique_id=1181114247]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0.15473986, -0.87516445, 0.55249333)
+
+[node name="Building Base Structure" type="CSGBox3D" parent="Base Roof" unique_id=608872200]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.5, 0)
+size = Vector3(15, 10, 15)
+
+[node name="Base Emptier" type="CSGBox3D" parent="Base Roof" unique_id=472744452]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.291172, 4.3094177, 4.0655594)
+operation = 2
+size = Vector3(5.4676514, 13.670471, 9.71582)
+
+[node name="Base Emptier2" type="CSGBox3D" parent="Base Roof" unique_id=1592605905]
+transform = Transform3D(0.49999994, 0.8660253, 0, -0.8660253, 0.49999994, 0, 0, 0, 1, -8.261314, 11.198843, -2.2150097)
+operation = 2
+size = Vector3(9.470551, 13.670471, 22.523438)
+
+[node name="Base Emptier4" type="CSGBox3D" parent="Base Roof" unique_id=1288499860]
+transform = Transform3D(0.49999994, 0.8660253, 0, -0.8660253, 0.49999994, 0, 0, 0, 1, -6.7957873, 1.006716, -2.2150097)
+operation = 2
+size = Vector3(9.470551, 17.054962, 22.523438)
+
+[node name="Base Emptier3" type="CSGBox3D" parent="Base Roof" unique_id=1958938640]
+transform = Transform3D(-0.50000006, 0.86602527, 0, -0.86602527, -0.50000006, 0, 0, 0, 1, 4.70027, 11.198843, -2.2150097)
+operation = 2
+size = Vector3(9.470551, 13.670471, 22.523438)
+
+[node name="Base Emptier5" type="CSGBox3D" parent="Base Roof" unique_id=706376535]
+transform = Transform3D(-0.50000006, 0.86602527, 0, -0.86602527, -0.50000006, 0, 0, 0, 1, 3.2432, 1.0265458, -2.2150097)
+operation = 2
+size = Vector3(9.470551, 17.03543, 22.523438)

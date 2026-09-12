@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://dy26xc485fhld"]
+
+[ext_resource type="Script" path="res://addons/srcoder_fps_controller/assets/scripts/player.gd" id="1_f6swd"]
+[ext_resource type="Material" uid="uid://xksju4002ur7" path="res://addons/srcoder_fps_controller/assets/materials/white.material" id="2_fs15m"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_ntw7j"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ha1jo"]
+
+[node name="Player" type="CharacterBody3D"]
+physics_interpolation_mode = 1
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.10191, 0)
+script = ExtResource("1_f6swd")
+
+[node name="PlayerMesh" type="MeshInstance3D" parent="."]
+material_override = ExtResource("2_fs15m")
+gi_mode = 0
+mesh = SubResource("CapsuleMesh_ntw7j")
+surface_material_override/0 = ExtResource("2_fs15m")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_ha1jo")
+
+[node name="CameraPivot" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.49559, 0)
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot"]

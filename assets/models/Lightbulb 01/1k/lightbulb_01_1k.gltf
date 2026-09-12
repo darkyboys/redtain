@@ -1,0 +1,304 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v3.3.32",
+    "version": "2.0"
+  },
+  "extensionsUsed": [
+    "KHR_materials_transmission",
+    "KHR_materials_ior",
+    "KHR_materials_emissive_strength"
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "lightbulb_01"
+    }
+  ],
+  "materials": [
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_transmission": {
+          "transmissionFactor": 1
+        },
+        "KHR_materials_ior": {
+          "ior": 1.4500000476837158
+        }
+      },
+      "name": "lightbulb_01_glass",
+      "normalTexture": {
+        "index": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        1,
+        1,
+        1
+      ],
+      "emissiveTexture": {
+        "index": 3
+      },
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 10
+        }
+      },
+      "name": "lightbulb_01_base",
+      "normalTexture": {
+        "index": 4
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 5
+        },
+        "metallicRoughnessTexture": {
+          "index": 6
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Cube.004",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    },
+    {
+      "sampler": 0,
+      "source": 3
+    },
+    {
+      "sampler": 0,
+      "source": 4
+    },
+    {
+      "sampler": 0,
+      "source": 5
+    },
+    {
+      "sampler": 0,
+      "source": 6
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/jpeg",
+      "name": "lightbulb_01_nor_gl",
+      "uri": "textures/lightbulb_01_nor_gl_1k.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "name": "lightbulb_01_diff-lightbulb_01_alpha",
+      "uri": "textures/lightbulb_01_diff_1k.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "name": "lightbulb_01_metal-lightbulb_01_rough",
+      "uri": "textures/lightbulb_01_arm_1k.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "name": "lightbulb_01_emissive",
+      "uri": "textures/lightbulb_01_emissive_1k.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "name": "lightbulb_01_nor_gl.png",
+      "uri": "textures/lightbulb_01_nor_gl_1k.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "name": "lightbulb_01_diff.png",
+      "uri": "textures/lightbulb_01_diff_1k.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "name": "lightbulb_01_metal.png-lightbulb_01_rough.png",
+      "uri": "textures/lightbulb_01_arm_1k.jpg"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 1197,
+      "max": [
+        0.029994994401931763,
+        0.08343717455863953,
+        0.029995005577802658
+      ],
+      "min": [
+        -0.029995005577802658,
+        0.008526600897312164,
+        -0.02999500185251236
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 1197,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 1197,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 6240,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 1570,
+      "max": [
+        0.014109416864812374,
+        0.051748357713222504,
+        0.014108626171946526
+      ],
+      "min": [
+        -0.014109295792877674,
+        -0.016851793974637985,
+        -0.014110085554420948
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 1570,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 1570,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5123,
+      "count": 6876,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 14364,
+      "byteOffset": 0,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 14364,
+      "byteOffset": 14364,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 9576,
+      "byteOffset": 28728,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 12480,
+      "byteOffset": 38304,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 18840,
+      "byteOffset": 50784,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 18840,
+      "byteOffset": 69624,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 12560,
+      "byteOffset": 88464,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 13752,
+      "byteOffset": 101024,
+      "target": 34963
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 114776,
+      "uri": "lightbulb_01.bin"
+    }
+  ]
+}

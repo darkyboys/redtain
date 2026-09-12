@@ -1,0 +1,158 @@
+[gd_scene load_steps=3 format=3 uid="uid://bl0giy8cktw7t"]
+
+[ext_resource type="Script" uid="uid://pebx3xfu63dd" path="res://addons/ambientcg/ui/sidebar/sidebar.gd" id="1_script"]
+[ext_resource type="ButtonGroup" uid="uid://be6yjy4y6y7y6" path="res://addons/ambientcg/ui/sidebar/container_group.tres" id="2_group"]
+
+[node name="Sidebar" type="VBoxContainer"]
+custom_minimum_size = Vector2(280, 0)
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -280.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_constants/separation = 0
+script = ExtResource("1_script")
+
+[node name="VSplit" type="VSplitContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+split_offset = 200
+
+[node name="InspectorScroll" type="ScrollContainer" parent="VSplit"]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="Margin" type="MarginContainer" parent="VSplit/InspectorScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBox" type="VBoxContainer" parent="VSplit/InspectorScroll/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="ManualIdInput" type="HBoxContainer" parent="VSplit/InspectorScroll/Margin/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="IdEdit" type="LineEdit" parent="VSplit/InspectorScroll/Margin/VBox/ManualIdInput"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Enter Asset ID..."
+alignment = 1
+
+[node name="LoadButton" type="Button" parent="VSplit/InspectorScroll/Margin/VBox/ManualIdInput"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Load"
+
+[node name="AssetInspector" type="VBoxContainer" parent="VSplit/InspectorScroll/Margin/VBox"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="InspectorTitle" type="Label" parent="VSplit/InspectorScroll/Margin/VBox/AssetInspector"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "Asset Details"
+
+[node name="HSeparator" type="HSeparator" parent="VSplit/InspectorScroll/Margin/VBox/AssetInspector"]
+layout_mode = 2
+
+[node name="PreviewRect" type="TextureRect" parent="VSplit/InspectorScroll/Margin/VBox/AssetInspector"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AssetTitle" type="Label" parent="VSplit/InspectorScroll/Margin/VBox/AssetInspector"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+text = "Asset Name"
+autowrap_mode = 3
+
+[node name="ContainerSelection" type="VBoxContainer" parent="VSplit/InspectorScroll/Margin/VBox/AssetInspector"]
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="Label" type="Label" parent="VSplit/InspectorScroll/Margin/VBox/AssetInspector/ContainerSelection"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "Container Format:"
+
+[node name="ZipRadio" type="CheckBox" parent="VSplit/InspectorScroll/Margin/VBox/AssetInspector/ContainerSelection"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_size_override/font_size = 11
+button_pressed = true
+button_group = ExtResource("2_group")
+text = "ZIP"
+
+[node name="UsdzRadio" type="CheckBox" parent="VSplit/InspectorScroll/Margin/VBox/AssetInspector/ContainerSelection"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_size_override/font_size = 11
+button_group = ExtResource("2_group")
+text = "USDZ"
+
+[node name="GroupsContainer" type="VBoxContainer" parent="VSplit/InspectorScroll/Margin/VBox/AssetInspector"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="SidebarPlaceholder" type="CenterContainer" parent="VSplit/InspectorScroll/Margin/VBox"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="VSplit/InspectorScroll/Margin/VBox/SidebarPlaceholder"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.666667, 0.666667, 0.666667, 1)
+text = "Select an asset to see details"
+horizontal_alignment = 1
+
+[node name="DownloadSection" type="VBoxContainer" parent="VSplit"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 5
+
+[node name="Margin" type="MarginContainer" parent="VSplit/DownloadSection"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBox" type="VBoxContainer" parent="VSplit/DownloadSection/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="SidebarTitle" type="Label" parent="VSplit/DownloadSection/Margin/VBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+text = "Active Downloads"
+horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="VSplit/DownloadSection/Margin/VBox"]
+layout_mode = 2
+
+[node name="DownloadScroll" type="ScrollContainer" parent="VSplit/DownloadSection/Margin/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="DownloadList" type="VBoxContainer" parent="VSplit/DownloadSection/Margin/VBox/DownloadScroll"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 4

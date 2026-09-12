@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://xvirvni0l0oy"]
+
+[ext_resource type="Script" uid="uid://57ix7ilwpqvk" path="res://addons/srcoder_fps_controller/assets/scripts/mouse_lock.gd" id="1_g4cg0"]
+
+[node name="MouseLock" type="Node" unique_id=1675291935]
+script = ExtResource("1_g4cg0")

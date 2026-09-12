@@ -1,0 +1,181 @@
+[gd_scene load_steps=4 format=3 uid="uid://la5yvpkm26t5"]
+
+[ext_resource type="Script" uid="uid://dox3k648pwv44" path="res://addons/ambientcg/ui/browser/browser.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://bh5suxm427fn0" path="res://addons/ambientcg/plugin_assets/icon/search.svg" id="2_icon"]
+[ext_resource type="Texture2D" path="res://addons/ambientcg/plugin_assets/icon/spinner.svg" id="3_spinner"]
+[ext_resource type="PackedScene" path="res://addons/ambientcg/ui/sidebar/sidebar.tscn" id="4_sidebar"]
+
+[node name="Browser" type="MarginContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+script = ExtResource("1_script")
+
+[node name="HSplit" type="HSplitContainer" parent="."]
+layout_mode = 2
+split_offset = -300
+
+[node name="MainPanel" type="VBoxContainer" parent="HSplit"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+
+[node name="SearchHeader" type="VBoxContainer" parent="HSplit/MainPanel"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="SearchBox" type="HBoxContainer" parent="HSplit/MainPanel/SearchHeader"]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="SearchBar" type="LineEdit" parent="HSplit/MainPanel/SearchHeader/SearchBox"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Search materials, HDRIs..."
+
+[node name="SearchButton" type="Button" parent="HSplit/MainPanel/SearchHeader/SearchBox"]
+unique_name_in_owner = true
+layout_mode = 2
+icon = ExtResource("2_icon")
+
+[node name="Filters" type="HBoxContainer" parent="HSplit/MainPanel/SearchHeader"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="TypeGroup" type="HBoxContainer" parent="HSplit/MainPanel/SearchHeader/Filters"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HSplit/MainPanel/SearchHeader/Filters/TypeGroup"]
+layout_mode = 2
+text = "Type:"
+
+[node name="TypeOptions" type="OptionButton" parent="HSplit/MainPanel/SearchHeader/Filters/TypeGroup"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="ResolutionGroup" type="HBoxContainer" parent="HSplit/MainPanel/SearchHeader/Filters"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HSplit/MainPanel/SearchHeader/Filters/ResolutionGroup"]
+layout_mode = 2
+text = "Resolution:"
+
+[node name="ResolutionOptions" type="OptionButton" parent="HSplit/MainPanel/SearchHeader/Filters/ResolutionGroup"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="SortGroup" type="HBoxContainer" parent="HSplit/MainPanel/SearchHeader/Filters"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HSplit/MainPanel/SearchHeader/Filters/SortGroup"]
+layout_mode = 2
+text = "Sort By:"
+
+[node name="SortOptions" type="OptionButton" parent="HSplit/MainPanel/SearchHeader/Filters/SortGroup"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="ResultsArea" type="Panel" parent="HSplit/MainPanel"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SearchScroll" type="ScrollContainer" parent="HSplit/MainPanel/ResultsArea"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 0
+
+[node name="SearchGrid" type="HFlowContainer" parent="HSplit/MainPanel/ResultsArea/SearchScroll"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+
+[node name="StatusOverlay" type="CenterContainer" parent="HSplit/MainPanel/ResultsArea"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="StatusVBox" type="VBoxContainer" parent="HSplit/MainPanel/ResultsArea/StatusOverlay"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="LoadingSpinner" type="TextureRect" parent="HSplit/MainPanel/ResultsArea/StatusOverlay/StatusVBox"]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("3_spinner")
+expand_mode = 1
+stretch_mode = 5
+pivot_offset = Vector2(20, 20)
+
+[node name="StatusLabel" type="Label" parent="HSplit/MainPanel/ResultsArea/StatusOverlay/StatusVBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.666667, 0.666667, 0.666667, 1)
+theme_override_font_sizes/font_size = 18
+text = "Searching..."
+horizontal_alignment = 1
+
+[node name="OverlayCancelButton" type="Button" parent="HSplit/MainPanel/ResultsArea/StatusOverlay/StatusVBox"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Cancel Search"
+
+[node name="Footer" type="HBoxContainer" parent="HSplit/MainPanel"]
+layout_mode = 2
+
+[node name="PluginVersion" type="Label" parent="HSplit/MainPanel/Footer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 12
+text = "AmbientCG v0.1.0"
+
+
+[node name="SearchingIndicator" type="Label" parent="HSplit/MainPanel/Footer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+text = "Loading more..."
+
+[node name="SearchResultCount" type="Label" parent="HSplit/MainPanel/Footer"]
+unique_name_in_owner = true
+layout_mode = 2
+horizontal_alignment = 2
+
+[node name="Sidebar" parent="HSplit" instance=ExtResource("4_sidebar")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="DebounceTimer" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 0.5
+one_shot = true
+
+[node name="TimeoutTimer" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 10.0
+one_shot = true

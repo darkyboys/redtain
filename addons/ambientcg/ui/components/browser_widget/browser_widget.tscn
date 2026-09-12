@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://5j8ennv6ixgh"]
+
+[ext_resource type="Script" uid="uid://ckyb8018q6yh1" path="res://addons/ambientcg/ui/components/browser_widget/browser_widget.gd" id="1_widget"]
+
+[node name="BrowserWidget" type="PanelContainer"]
+custom_minimum_size = Vector2(140, 128)
+offset_right = 140.0
+offset_bottom = 128.0
+script = ExtResource("1_widget")
+
+[node name="VBox" type="VBoxContainer" parent="."]
+layout_margin_left = 4
+layout_margin_top = 4
+layout_margin_right = 4
+layout_margin_bottom = 4
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="VBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Button" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+flat = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

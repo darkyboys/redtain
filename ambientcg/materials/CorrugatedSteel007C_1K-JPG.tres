@@ -1,0 +1,26 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://c1ibybpnn6jj7"]
+
+[ext_resource type="Texture2D" uid="uid://dpqfxk3dii2qy" path="res://ambientcg/extracted/CorrugatedSteel007C_1K-JPG/CorrugatedSteel007C_1K-JPG_Color.jpg" id="1_6blbf"]
+[ext_resource type="Texture2D" uid="uid://iyipp30tlh8w" path="res://ambientcg/extracted/CorrugatedSteel007C_1K-JPG/CorrugatedSteel007C_1K-JPG_AmbientOcclusion.jpg" id="2_4k3th"]
+[ext_resource type="Texture2D" uid="uid://cs6aqrsgjxj72" path="res://ambientcg/extracted/CorrugatedSteel007C_1K-JPG/CorrugatedSteel007C_1K-JPG_Displacement.jpg" id="3_5yj4l"]
+[ext_resource type="Texture2D" uid="uid://bk0lnewha3tan" path="res://ambientcg/extracted/CorrugatedSteel007C_1K-JPG/CorrugatedSteel007C_1K-JPG_Metalness.jpg" id="4_42kca"]
+[ext_resource type="Texture2D" uid="uid://ngx8wok0agsq" path="res://ambientcg/extracted/CorrugatedSteel007C_1K-JPG/CorrugatedSteel007C_1K-JPG_NormalGL.jpg" id="5_wu6lc"]
+[ext_resource type="Texture2D" uid="uid://cgw1oxntys3mt" path="res://ambientcg/extracted/CorrugatedSteel007C_1K-JPG/CorrugatedSteel007C_1K-JPG_Roughness.jpg" id="6_5b776"]
+
+[resource]
+albedo_texture = ExtResource("1_6blbf")
+metallic = 1.0
+metallic_texture = ExtResource("4_42kca")
+metallic_texture_channel = 4
+roughness_texture = ExtResource("6_5b776")
+roughness_texture_channel = 4
+normal_enabled = true
+normal_texture = ExtResource("5_wu6lc")
+ao_enabled = true
+ao_texture = ExtResource("2_4k3th")
+ao_texture_channel = 4
+heightmap_enabled = true
+heightmap_scale = 1.0
+heightmap_texture = ExtResource("3_5yj4l")
+uv1_scale = Vector3(0.2, 0.2, 0.2)
+uv1_triplanar = true

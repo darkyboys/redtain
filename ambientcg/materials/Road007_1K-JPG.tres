@@ -1,0 +1,16 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://canutyc0dwnmm"]
+
+[ext_resource type="Texture2D" uid="uid://ii03x76d0tjw" path="res://ambientcg/extracted/Road007_1K-JPG/Road007_1K-JPG_Color.jpg" id="1_scagi"]
+[ext_resource type="Texture2D" uid="uid://vmgpbls4v676" path="res://ambientcg/extracted/Road007_1K-JPG/Road007_1K-JPG_Displacement.jpg" id="2_vfyat"]
+[ext_resource type="Texture2D" uid="uid://j1yfnw7k0c5a" path="res://ambientcg/extracted/Road007_1K-JPG/Road007_1K-JPG_NormalGL.jpg" id="3_tbylm"]
+[ext_resource type="Texture2D" uid="uid://hce5tawngwuo" path="res://ambientcg/extracted/Road007_1K-JPG/Road007_1K-JPG_Roughness.jpg" id="4_35v2r"]
+
+[resource]
+albedo_texture = ExtResource("1_scagi")
+roughness_texture = ExtResource("4_35v2r")
+roughness_texture_channel = 4
+normal_enabled = true
+normal_texture = ExtResource("3_tbylm")
+heightmap_enabled = true
+heightmap_scale = 1.0
+heightmap_texture = ExtResource("2_vfyat")

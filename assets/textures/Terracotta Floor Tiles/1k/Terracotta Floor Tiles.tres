@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b5cmek2qdwfcj"]
+
+[ext_resource type="Texture2D" uid="uid://ctmimsjnkrkxh" path="res://assets/textures/Terracotta Floor Tiles/1k/textures/terracotta_floor_tiles_diff_1k.png" id="1_dkhyx"]
+[ext_resource type="Texture2D" uid="uid://c3vcbthxxhcuf" path="res://assets/textures/Terracotta Floor Tiles/1k/textures/terracotta_floor_tiles_ao_1k.png" id="2_1w0vy"]
+[ext_resource type="Texture2D" uid="uid://c4rnwaohrnpmb" path="res://assets/textures/Terracotta Floor Tiles/1k/textures/terracotta_floor_tiles_disp_1k.png" id="3_pj1b5"]
+[ext_resource type="Texture2D" uid="uid://c1g4mkobb4h02" path="res://assets/textures/Terracotta Floor Tiles/1k/textures/terracotta_floor_tiles_nor_gl_1k.png" id="4_84uvg"]
+[ext_resource type="Texture2D" uid="uid://dgriuy6umf8w2" path="res://assets/textures/Terracotta Floor Tiles/1k/textures/terracotta_floor_tiles_rough_1k.png" id="5_v5e84"]
+
+[resource]
+albedo_texture = ExtResource("1_dkhyx")
+roughness_texture = ExtResource("5_v5e84")
+normal_enabled = true
+normal_texture = ExtResource("4_84uvg")
+ao_enabled = true
+ao_texture = ExtResource("2_1w0vy")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_pj1b5")
+heightmap_flip_texture = true
+uv1_triplanar = true
