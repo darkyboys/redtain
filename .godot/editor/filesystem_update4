@@ -1,1 +1,22 @@
 res://scenes/districts/nine_town.tscn
+res://scenes/objects/buildings/Nine Town/building_001.tscn
+res://scenes/objects/buildings/Nine Town/building_001___metal_sheet.tscn
+res://scenes/objects/buildings/Nine Town/building___001___wooden_house.tscn
+res://ambientcg/materials/Facade017_1K-JPG.tres
+res://scenes/objects/buildings/XCity/Tops/Building 001.tscn
+res://ambientcg/materials/Concrete031_1K-JPG.tres
+res://ambientcg/materials/Concrete046_1K-JPG.tres
+res://ambientcg/materials/Plastic010_1K-PNG.tres
+res://ambientcg/materials/Paint004_1K-JPG.tres
+res://custom/assets/textures/paint white.tres
+res://ambientcg/materials/MetalPlates006_1K-JPG.tres
+res://ambientcg/extracted/DiamondPlate008C_1K-JPG/DiamondPlate008C_1K-JPG_AmbientOcclusion.jpg
+res://ambientcg/extracted/DiamondPlate008C_1K-JPG/DiamondPlate008C_1K-JPG_Color.jpg
+res://ambientcg/extracted/DiamondPlate008C_1K-JPG/DiamondPlate008C_1K-JPG_Displacement.jpg
+res://ambientcg/extracted/DiamondPlate008C_1K-JPG/DiamondPlate008C_1K-JPG_Metalness.jpg
+res://ambientcg/extracted/DiamondPlate008C_1K-JPG/DiamondPlate008C_1K-JPG_NormalDX.jpg
+res://ambientcg/extracted/DiamondPlate008C_1K-JPG/DiamondPlate008C_1K-JPG_NormalGL.jpg
+res://ambientcg/extracted/DiamondPlate008C_1K-JPG/DiamondPlate008C_1K-JPG_Roughness.jpg
+res://ambientcg/materials/DiamondPlate008C_1K-JPG.tres
+res://ambientcg/materials/Metal041A_1K-JPG.tres
+res://ambientcg/materials/Tiles139_1K-JPG.tres

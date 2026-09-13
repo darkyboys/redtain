@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://d4kaxqnqp1822"]
+
+[ext_resource type="Texture2D" uid="uid://ckf3tn1iher0k" path="res://assets/textures/Oak Wood Planks/1k/textures/oak_wood_planks_diff_1k.png" id="1_sul1w"]
+[ext_resource type="Texture2D" uid="uid://bmhv2ya4lxehn" path="res://assets/textures/Oak Wood Planks/1k/textures/oak_wood_planks_ao_1k.png" id="2_ykwb8"]
+[ext_resource type="Texture2D" uid="uid://ceowx3jspml8w" path="res://assets/textures/Oak Wood Planks/1k/textures/oak_wood_planks_disp_1k.png" id="3_2sux4"]
+[ext_resource type="Texture2D" uid="uid://df4oj1ho6kpgo" path="res://assets/textures/Oak Wood Planks/1k/textures/oak_wood_planks_nor_gl_1k.png" id="4_q510h"]
+[ext_resource type="Texture2D" uid="uid://dngcjqlrvdq0f" path="res://assets/textures/Oak Wood Planks/1k/textures/oak_wood_planks_rough_1k.png" id="5_nv0r8"]
+
+[resource]
+albedo_texture = ExtResource("1_sul1w")
+roughness_texture = ExtResource("5_nv0r8")
+normal_enabled = true
+normal_texture = ExtResource("4_q510h")
+ao_enabled = true
+ao_texture = ExtResource("2_ykwb8")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_2sux4")
+heightmap_flip_texture = true
+uv1_triplanar = true

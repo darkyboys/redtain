@@ -17,14 +17,14 @@ Just follow the CONTRIBUTING.md for the checking the exact ways you can contribu
 
 **Note**: These screenshots may be outdated because it's really not possible to upload every single frame to the repository when the project keeps getting updates every few hours to days.
 
-![Screenshot 1](img/Screenshot%20From%202026-09-12%2017-47-07.png)
-![Screenshot 2](img/Screenshot%20From%202026-09-12%2017-47-12.png)
-![Screenshot 3](img/Screenshot%20From%202026-09-12%2017-47-19.png)
-![Screenshot 4](img/Screenshot%20From%202026-09-12%2017-47-27.png)
-![Screenshot 5](img/Screenshot%20From%202026-09-12%2017-47-44.png)
-![Screenshot 6](img/Screenshot%20From%202026-09-12%2017-48-07.png)
-![Screenshot 7](img/Screenshot%20From%202026-09-12%2017-48-12.png)
-![Screenshot 8](img/Screenshot%20From%202026-09-12%2017-48-31.png)
+![Screenshot 1](img/Screenshot%20From%202026-09-13%2013-24-53.png)
+![Screenshot 2](img/Screenshot%20From%202026-09-13%2013-25-03.png)
+![Screenshot 3](img/Screenshot%20From%202026-09-13%2013-25-11.png)
+![Screenshot 4](img/Screenshot%20From%202026-09-13%2013-25-30.png)
+![Screenshot 5](img/Screenshot%20From%202026-09-13%2013-26-02.png)
+![Screenshot 6](img/Screenshot%20From%202026-09-13%2013-26-07.png)
+![Screenshot 7](img/Screenshot%20From%202026-09-13%2013-26-49.png)
+![Screenshot 8](img/Screenshot%20From%202026-09-13%2013-27-28.png)
 
 ---
 

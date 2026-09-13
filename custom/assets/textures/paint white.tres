@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://c3tcghxvhpt8l"]
+
+[ext_resource type="Texture2D" uid="uid://bco700bdvpjm5" path="res://ambientcg/extracted/Concrete046_1K-JPG/Concrete046_1K-JPG_NormalDX.jpg" id="1_6l44l"]
+
+[resource]
+metallic = 0.32
+roughness = 0.2
+normal_enabled = true
+normal_scale = 4.8
+normal_texture = ExtResource("1_6l44l")
+uv1_scale = Vector3(0.15, 0.15, 0.15)
+uv1_triplanar = true
