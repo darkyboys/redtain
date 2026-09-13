@@ -1,0 +1,21 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bfie12ybuifm8"]
+
+[ext_resource type="Texture2D" uid="uid://brmlsh2t76htp" path="res://ambientcg/extracted/Facade017_1K-JPG/Facade017_1K-JPG_Color.jpg" id="1_bnqpj"]
+[ext_resource type="Texture2D" uid="uid://bbplcarp8jeu" path="res://ambientcg/extracted/Facade017_1K-JPG/Facade017_1K-JPG_Emission.jpg" id="2_kqgw5"]
+[ext_resource type="Texture2D" uid="uid://cabspgx7bvb1s" path="res://ambientcg/extracted/Facade017_1K-JPG/Facade017_1K-JPG_Displacement.jpg" id="3_om1fk"]
+[ext_resource type="Texture2D" uid="uid://bwikojwygxsv" path="res://ambientcg/extracted/Facade017_1K-JPG/Facade017_1K-JPG_NormalGL.jpg" id="4_u4jwp"]
+[ext_resource type="Texture2D" uid="uid://oarakbd6o5m4" path="res://ambientcg/extracted/Facade017_1K-JPG/Facade017_1K-JPG_Roughness.jpg" id="5_pkrr4"]
+
+[resource]
+albedo_texture = ExtResource("1_bnqpj")
+roughness_texture = ExtResource("5_pkrr4")
+roughness_texture_channel = 4
+emission_enabled = true
+emission_texture = ExtResource("2_kqgw5")
+normal_enabled = true
+normal_texture = ExtResource("4_u4jwp")
+heightmap_enabled = true
+heightmap_scale = 1.0
+heightmap_texture = ExtResource("3_om1fk")
+uv1_scale = Vector3(-0.065, -0.065, -0.065)
+uv1_triplanar = true

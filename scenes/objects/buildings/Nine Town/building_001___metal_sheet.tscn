@@ -93,16 +93,7 @@ operation = 2
 size = Vector3(8.47802, 1.4383947, 4.27536)
 material = ExtResource("2_8q88b")
 
-[node name="CSGBakedMeshInstance3D" type="MeshInstance3D" parent="Building 001" unique_id=1331754991]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
-mesh = SubResource("ArrayMesh_j61td")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Building 001/CSGBakedMeshInstance3D" unique_id=711438804]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Building 001/CSGBakedMeshInstance3D/StaticBody3D" unique_id=1406557627]
-shape = SubResource("ConcavePolygonShape3D_fpoix")
-
-[node name="Base Roof" parent="Building 001" index="2" unique_id=1181114247]
+[node name="Base Roof" parent="Building 001" index="1" unique_id=1181114247]
 visible = false
 
 [node name="Building Base Structure" parent="Building 001/Base Roof" index="0" unique_id=608872200]
@@ -122,6 +113,15 @@ material = ExtResource("3_2tv7t")
 
 [node name="Base Emptier5" parent="Building 001/Base Roof" index="5" unique_id=706376535]
 material = ExtResource("3_2tv7t")
+
+[node name="CSGBakedMeshInstance3D" type="MeshInstance3D" parent="Building 001" unique_id=1331754991]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = SubResource("ArrayMesh_j61td")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Building 001/CSGBakedMeshInstance3D" unique_id=711438804]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Building 001/CSGBakedMeshInstance3D/StaticBody3D" unique_id=1406557627]
+shape = SubResource("ConcavePolygonShape3D_fpoix")
 
 [node name="CSGBakedMeshInstance3D2" type="MeshInstance3D" parent="Building 001" unique_id=1296967918]
 transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0.15473986, -0.87516445, 0.55249333)

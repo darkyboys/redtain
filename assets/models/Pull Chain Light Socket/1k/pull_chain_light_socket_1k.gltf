@@ -1,0 +1,236 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v3.6.27",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0,
+        1
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "pull_chain_light_socket"
+    },
+    {
+      "mesh": 1,
+      "name": "pull_chain_light_socket_chain"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "pull_chain_light_socket",
+      "normalTexture": {
+        "index": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "light_socket_01_base_mesh_01",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "light_socket_01_chain_mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/jpeg",
+      "name": "pull_chain_light_socket_nor_gl",
+      "uri": "textures/pull_chain_light_socket_nor_gl_1k.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "name": "pull_chain_light_socket_diff",
+      "uri": "textures/pull_chain_light_socket_diff_1k.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "name": "pull_chain_light_socket_metal-pull_chain_light_socket_rough",
+      "uri": "textures/pull_chain_light_socket_arm_1k.jpg"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 3652,
+      "max": [
+        0.0551316924393177,
+        1.7800477536411563e-8,
+        0.0551316924393177
+      ],
+      "min": [
+        -0.055131696164608,
+        -0.050604064017534256,
+        -0.0551316924393177
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 3652,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 3652,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 18666,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 3164,
+      "max": [
+        -0.015185140073299408,
+        -0.01925428956747055,
+        0.0047948723658919334
+      ],
+      "min": [
+        -0.03131050243973732,
+        -0.1654157042503357,
+        -0.004794885404407978
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 3164,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 3164,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5123,
+      "count": 14040,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 43824,
+      "byteOffset": 0,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 43824,
+      "byteOffset": 43824,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 29216,
+      "byteOffset": 87648,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 37332,
+      "byteOffset": 116864,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 37968,
+      "byteOffset": 154196,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 37968,
+      "byteOffset": 192164,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 25312,
+      "byteOffset": 230132,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 28080,
+      "byteOffset": 255444,
+      "target": 34963
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 283524,
+      "uri": "pull_chain_light_socket.bin"
+    }
+  ]
+}

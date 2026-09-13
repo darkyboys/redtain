@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://j1yfnw7k0c5a" path="res://ambientcg/extracted/Road007_1K-JPG/Road007_1K-JPG_NormalGL.jpg" id="8_o1smw"]
 [ext_resource type="Texture2D" uid="uid://hce5tawngwuo" path="res://ambientcg/extracted/Road007_1K-JPG/Road007_1K-JPG_Roughness.jpg" id="9_xcmvf"]
 [ext_resource type="Material" uid="uid://bum63omnmqdm6" path="res://assets/textures/Herringbone Concrete Tile/1k/Herringbone Concrete Tile.tres" id="10_83ybk"]
+[ext_resource type="PackedScene" uid="uid://dtrh0vaq1quw7" path="res://scenes/objects/buildings/XCity/Tops/Building 001.tscn" id="11_8gjm7"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_o1smw"]
 energy_multiplier = 2.15
@@ -142,3 +143,39 @@ visible = false
 light_color = Color(0.98039216, 0.85882354, 0.5882353, 1)
 light_energy = 4.22
 shadow_enabled = true
+
+[node name="XCity_BuildingTop-Building001" parent="." unique_id=1901355315 instance=ExtResource("11_8gjm7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.455843, 1, -11)
+
+[node name="XCity_BuildingTop-Building002" parent="." unique_id=649867199 instance=ExtResource("11_8gjm7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.455843, 6, -11)
+
+[node name="XCity_BuildingTop-Building003" parent="." unique_id=394572424 instance=ExtResource("11_8gjm7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.455843, 11, -11)
+
+[node name="XCity_BuildingTop-Building004" parent="." unique_id=1061583740 instance=ExtResource("11_8gjm7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.455843, 16, -11)
+
+[node name="XCity_BuildingTop-Building005" parent="." unique_id=779423287 instance=ExtResource("11_8gjm7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.455843, 21, -11)
+
+[node name="XCity_BuildingTop-Building006" parent="." unique_id=1796539254 instance=ExtResource("11_8gjm7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.455843, 26, -11)
+
+[node name="XCity_BuildingTop-Building007" parent="." unique_id=1764907328 instance=ExtResource("11_8gjm7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.455843, 31, -11)
+
+[node name="XCity_BuildingTop-Building008" parent="." unique_id=1473394502 instance=ExtResource("11_8gjm7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.455843, 36, -11)
+
+[node name="XCity_BuildingTop-Building009" parent="." unique_id=1733067920 instance=ExtResource("11_8gjm7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.455843, 41, -11)
+
+[node name="XCity_BuildingTop-Building010" parent="." unique_id=1654291612 instance=ExtResource("11_8gjm7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.455843, 46, -11)
+
+[node name="XCity_BuildingTop-Building011" parent="." unique_id=1825472354 instance=ExtResource("11_8gjm7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.455843, 51, -11)
+
+[node name="XCity_BuildingTop-Building012" parent="." unique_id=1538315542 instance=ExtResource("11_8gjm7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.455843, 56, -11)
