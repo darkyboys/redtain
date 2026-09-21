@@ -1,0 +1,124 @@
+[gd_scene format=3 uid="uid://b1xthw5hvxf4o"]
+
+[ext_resource type="Script" uid="uid://cdmycgd5js323" path="res://scripts/objects/door/door_0.gd" id="1_2fenf"]
+[ext_resource type="Material" uid="uid://d4kaxqnqp1822" path="res://assets/textures/Oak Wood Planks/1k/Oak Wood Planks.tres" id="1_m0jep"]
+[ext_resource type="Material" uid="uid://kwddctnedtkx" path="res://ambientcg/materials/CorrugatedSteel009_1K-JPG.tres" id="3_6wa72"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2fenf"]
+size = Vector3(0.41430664, 3.1015625, 1.5340576)
+
+[sub_resource type="Animation" id="Animation_isrmt"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("door0:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("door0:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(2.7501256, 1.143282, 2.9856873)]
+}
+
+[sub_resource type="Animation" id="Animation_b5nje"]
+resource_name = "door0_close"
+length = 0.26999999999999996
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("door0:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.27),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(2.7501256, 1.143282, 4.501654), Vector3(2.7501256, 1.143282, 2.9856873)]
+}
+
+[sub_resource type="Animation" id="Animation_losy7"]
+resource_name = "door0_open"
+length = 0.26999999999999996
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("door0:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("door0:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.27),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(2.7501256, 1.143282, 2.9856873), Vector3(2.7501256, 1.143282, 4.501654)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6wa72"]
+_data = {
+&"RESET": SubResource("Animation_isrmt"),
+&"door0_close": SubResource("Animation_b5nje"),
+&"door0_open": SubResource("Animation_losy7")
+}
+
+[node name="door0" type="Node3D" unique_id=1088790463]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7461157, 0, -2.908868)
+script = ExtResource("1_2fenf")
+
+[node name="door0" type="CSGBox3D" parent="." unique_id=324187110]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7501256, 1.143282, 2.9856873)
+use_collision = true
+size = Vector3(0.025024414, 2.9220276, 1.5210571)
+material = ExtResource("1_m0jep")
+
+[node name="Door0_area" type="Area3D" parent="." unique_id=316303549]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 3)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Door0_area" unique_id=1845988272]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.29284668, 1.0507813, -0.010314941)
+shape = SubResource("BoxShape3D_2fenf")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=228710645]
+libraries/ = SubResource("AnimationLibrary_6wa72")
+
+[node name="Door Animation Timer" type="Timer" parent="." unique_id=1685800607]
+wait_time = 0.6
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1063728661]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7514038, 2.585205, 2.9729004)
+size = Vector3(0.06359863, 0.17041016, 1.5566406)
+material = ExtResource("3_6wa72")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=1679632707]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7514038, -0.41479492, 2.9719849)
+size = Vector3(0.06359863, 0.17041016, 1.5548096)
+material = ExtResource("3_6wa72")
+
+[connection signal="body_entered" from="Door0_area" to="." method="_on_door_0_area_body_entered"]
+[connection signal="body_exited" from="Door0_area" to="." method="_on_door_0_area_body_exited"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
+[connection signal="timeout" from="Door Animation Timer" to="." method="_on_door_animation_timer_timeout"]

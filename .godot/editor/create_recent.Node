@@ -1,4 +1,9 @@
-CSGTorus3D
 CSGBox3D
+OmniLight3D
+Timer
+AnimationPlayer
+CollisionShape3D
+Area3D
+CSGTorus3D
 Node3D
 CSGCombiner3D

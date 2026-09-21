@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bjt5af3ogiml6"]
+
+[ext_resource type="Texture2D" uid="uid://dcb2t0y5mbyq5" path="res://assets/textures/Granite Tile 03/1k/textures/granite_tile_03_diff_1k.png" id="1_3k642"]
+[ext_resource type="Texture2D" uid="uid://uk14excfxcrs" path="res://assets/textures/Granite Tile 03/1k/textures/granite_tile_03_ao_1k.png" id="2_66iif"]
+[ext_resource type="Texture2D" uid="uid://cc2meo1g0na6o" path="res://assets/textures/Granite Tile 03/1k/textures/granite_tile_03_disp_1k.png" id="3_0g36d"]
+[ext_resource type="Texture2D" uid="uid://btw2sx6xwgjwr" path="res://assets/textures/Granite Tile 03/1k/textures/granite_tile_03_nor_gl_1k.png" id="4_w3oy8"]
+[ext_resource type="Texture2D" uid="uid://co8udc1bub87q" path="res://assets/textures/Granite Tile 03/1k/textures/granite_tile_03_rough_1k.png" id="5_v0pkk"]
+
+[resource]
+albedo_texture = ExtResource("1_3k642")
+roughness_texture = ExtResource("5_v0pkk")
+normal_enabled = true
+normal_texture = ExtResource("4_w3oy8")
+ao_enabled = true
+ao_texture = ExtResource("2_66iif")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_0g36d")
+heightmap_flip_texture = true
+uv1_triplanar = true

@@ -1,11 +1,11 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://bgubkj5sv8ddn"]
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://kwddctnedtkx"]
 
-[ext_resource type="Texture2D" uid="uid://du52xlihif8rg" path="res://ambientcg/extracted/CorrugatedSteel009_1K-JPG/CorrugatedSteel009_1K-JPG_Color.jpg" id="1_7n1hf"]
-[ext_resource type="Texture2D" uid="uid://dl7rnbx4k268h" path="res://ambientcg/extracted/CorrugatedSteel009_1K-JPG/CorrugatedSteel009_1K-JPG_AmbientOcclusion.jpg" id="2_l7a7b"]
-[ext_resource type="Texture2D" uid="uid://hncsbjbayh8h" path="res://ambientcg/extracted/CorrugatedSteel009_1K-JPG/CorrugatedSteel009_1K-JPG_Displacement.jpg" id="3_53x8n"]
-[ext_resource type="Texture2D" uid="uid://buibobgk5hexh" path="res://ambientcg/extracted/CorrugatedSteel009_1K-JPG/CorrugatedSteel009_1K-JPG_Metalness.jpg" id="4_gqcqy"]
-[ext_resource type="Texture2D" uid="uid://c5fx1yunntgyv" path="res://ambientcg/extracted/CorrugatedSteel009_1K-JPG/CorrugatedSteel009_1K-JPG_NormalGL.jpg" id="5_b5pkl"]
-[ext_resource type="Texture2D" uid="uid://bst3o7eqawsix" path="res://ambientcg/extracted/CorrugatedSteel009_1K-JPG/CorrugatedSteel009_1K-JPG_Roughness.jpg" id="6_npknk"]
+[ext_resource type="Texture2D" uid="uid://c7gaj5iiiw5ak" path="res://ambientcg/extracted/CorrugatedSteel009_1K-JPG/CorrugatedSteel009_1K-JPG_Color.jpg" id="1_7n1hf"]
+[ext_resource type="Texture2D" uid="uid://q7asieto7rin" path="res://ambientcg/extracted/CorrugatedSteel009_1K-JPG/CorrugatedSteel009_1K-JPG_AmbientOcclusion.jpg" id="2_l7a7b"]
+[ext_resource type="Texture2D" uid="uid://bl5hc7paemkje" path="res://ambientcg/extracted/CorrugatedSteel009_1K-JPG/CorrugatedSteel009_1K-JPG_Displacement.jpg" id="3_53x8n"]
+[ext_resource type="Texture2D" uid="uid://32muj58iv3ko" path="res://ambientcg/extracted/CorrugatedSteel009_1K-JPG/CorrugatedSteel009_1K-JPG_Metalness.jpg" id="4_gqcqy"]
+[ext_resource type="Texture2D" uid="uid://c5my1nmyj0d8f" path="res://ambientcg/extracted/CorrugatedSteel009_1K-JPG/CorrugatedSteel009_1K-JPG_NormalGL.jpg" id="5_b5pkl"]
+[ext_resource type="Texture2D" uid="uid://cp3d3otffw64f" path="res://ambientcg/extracted/CorrugatedSteel009_1K-JPG/CorrugatedSteel009_1K-JPG_Roughness.jpg" id="6_npknk"]
 
 [resource]
 albedo_texture = ExtResource("1_7n1hf")
@@ -22,4 +22,5 @@ ao_texture_channel = 4
 heightmap_enabled = true
 heightmap_scale = 1.0
 heightmap_texture = ExtResource("3_53x8n")
+uv1_scale = Vector3(0.5, 0.5, 0.5)
 uv1_triplanar = true

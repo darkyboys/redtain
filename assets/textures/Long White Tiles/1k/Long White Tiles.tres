@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dq4xh34qrqoxv"]
+
+[ext_resource type="Texture2D" uid="uid://c8dqgxh8xhnav" path="res://assets/textures/Long White Tiles/1k/textures/long_white_tiles_diff_1k.png" id="1_o4avv"]
+[ext_resource type="Texture2D" uid="uid://cgdyuyg51i5he" path="res://assets/textures/Long White Tiles/1k/textures/long_white_tiles_ao_1k.png" id="2_bsa4u"]
+[ext_resource type="Texture2D" uid="uid://ci5an3dkknv0q" path="res://assets/textures/Long White Tiles/1k/textures/long_white_tiles_disp_1k.png" id="3_bor0i"]
+[ext_resource type="Texture2D" uid="uid://ch444wqsk7ilo" path="res://assets/textures/Long White Tiles/1k/textures/long_white_tiles_nor_gl_1k.png" id="4_c886i"]
+[ext_resource type="Texture2D" uid="uid://b0di1s171uism" path="res://assets/textures/Long White Tiles/1k/textures/long_white_tiles_rough_1k.png" id="5_0jm4i"]
+
+[resource]
+albedo_texture = ExtResource("1_o4avv")
+roughness_texture = ExtResource("5_0jm4i")
+normal_enabled = true
+normal_texture = ExtResource("4_c886i")
+ao_enabled = true
+ao_texture = ExtResource("2_bsa4u")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_bor0i")
+heightmap_flip_texture = true
+uv1_triplanar = true

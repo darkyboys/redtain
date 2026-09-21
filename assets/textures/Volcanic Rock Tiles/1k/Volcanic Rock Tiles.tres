@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dldsv23x7c3um"]
+
+[ext_resource type="Texture2D" uid="uid://bpienckcnpu3k" path="res://assets/textures/Volcanic Rock Tiles/1k/textures/volcanic_rock_tiles_diff_1k.png" id="1_ahn7s"]
+[ext_resource type="Texture2D" uid="uid://cx44p0hms5x5j" path="res://assets/textures/Volcanic Rock Tiles/1k/textures/volcanic_rock_tiles_ao_1k.png" id="2_tpokr"]
+[ext_resource type="Texture2D" uid="uid://bxs7asgvl1mdw" path="res://assets/textures/Volcanic Rock Tiles/1k/textures/volcanic_rock_tiles_disp_1k.png" id="3_86c0s"]
+[ext_resource type="Texture2D" uid="uid://cf38mj6a461cq" path="res://assets/textures/Volcanic Rock Tiles/1k/textures/volcanic_rock_tiles_nor_gl_1k.png" id="4_hhuqm"]
+[ext_resource type="Texture2D" uid="uid://dkaa5gmbs1sjq" path="res://assets/textures/Volcanic Rock Tiles/1k/textures/volcanic_rock_tiles_rough_1k.png" id="5_qa8lq"]
+
+[resource]
+albedo_texture = ExtResource("1_ahn7s")
+roughness_texture = ExtResource("5_qa8lq")
+normal_enabled = true
+normal_texture = ExtResource("4_hhuqm")
+ao_enabled = true
+ao_texture = ExtResource("2_tpokr")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_86c0s")
+heightmap_flip_texture = true
+uv1_triplanar = true

@@ -61,6 +61,7 @@ uv1_scale = Vector3(1, -16.505, 1)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1745752637]
 transform = Transform3D(-0.6623128, -0.6204382, 0.41999766, -0.26141638, 0.716712, 0.64651805, -0.7021418, 0.31840286, -0.6368803, 0, 0, 0)
+visible = false
 light_color = Color(0.9999358, 1, 0.9514751, 1)
 light_energy = 3.075
 shadow_enabled = true
@@ -77,7 +78,8 @@ size = Vector3(33, 1, 35)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1446519, 0.47910166, -10.11138)
 
 [node name="Basic FPS Player" type="CharacterBody3D" parent="." unique_id=691184193]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+editor_description = "player"
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 2, -10)
 script = ExtResource("3_h8jl1")
 KEY_BIND_UP = "up"
 KEY_BIND_LEFT = "left"
@@ -139,7 +141,6 @@ size = Vector3(33, 1, 2)
 
 [node name="DirectionalLight3D2" type="DirectionalLight3D" parent="." unique_id=745518753]
 transform = Transform3D(-0.23492824, -0.32485318, 0.9161219, -0.65051454, 0.7528625, 0.10014552, -0.7222463, -0.5724236, -0.38819036, 0, 0, 0)
-visible = false
 light_color = Color(0.98039216, 0.85882354, 0.5882353, 1)
 light_energy = 4.22
 shadow_enabled = true

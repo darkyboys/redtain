@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cn0gqo50opdv5"]
+
+[ext_resource type="Texture2D" uid="uid://bu3tmme1ywjy5" path="res://assets/textures/Terrazzo Tiles/1k/textures/terrazzo_tiles_diff_1k.png" id="1_nnenh"]
+[ext_resource type="Texture2D" uid="uid://byyqmj3ditbql" path="res://assets/textures/Terrazzo Tiles/1k/textures/terrazzo_tiles_ao_1k.png" id="2_h2gil"]
+[ext_resource type="Texture2D" uid="uid://kb44uallygyr" path="res://assets/textures/Terrazzo Tiles/1k/textures/terrazzo_tiles_disp_1k.png" id="3_m8tjf"]
+[ext_resource type="Texture2D" uid="uid://cytpe3ym4js56" path="res://assets/textures/Terrazzo Tiles/1k/textures/terrazzo_tiles_nor_gl_1k.png" id="4_vlfnc"]
+[ext_resource type="Texture2D" uid="uid://bd5am681gu7b8" path="res://assets/textures/Terrazzo Tiles/1k/textures/terrazzo_tiles_rough_1k.png" id="5_vkqwa"]
+
+[resource]
+albedo_texture = ExtResource("1_nnenh")
+roughness_texture = ExtResource("5_vkqwa")
+normal_enabled = true
+normal_texture = ExtResource("4_vlfnc")
+ao_enabled = true
+ao_texture = ExtResource("2_h2gil")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_m8tjf")
+heightmap_flip_texture = true
+uv1_triplanar = true
